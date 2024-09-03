@@ -3,16 +3,12 @@ from contextlib import nullcontext as does_not_raise
 import pytest
 
 
-def test_main():
-    assert 1 == 1
-
-
 @pytest.mark.parametrize(
     'x, y, res',
     [
-        (6, 2, 3),
-        (10, -5, -2),
-        (0, 5, 0),
+        (6, 2, 8),
+        (10, -5, 5),
+        (0, 5, 5),
     ]
 )
 def test_sum(x, y, res):
