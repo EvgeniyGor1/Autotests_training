@@ -29,12 +29,12 @@ jobs:
       - name: install dependencies
         run: pip install -r requirements.txt
       - name: Run all_tests
-        if: 'github.event.inputs.deployment_target == "all_tests"'
+        if: "github.event.inputs.deployment_target == 'all_tests'"
         run: pytest
       - name: Run smoke_tests
-        if: 'github.event.inputs.deployment_target == "smoke_tests"'
+        if: "github.event.inputs.deployment_target == 'smoke_tests'"
         run: pytest -m smoke
       - name: Run not_smoke_tests
-        if: 'github.event.inputs.deployment_target == "not_smoke_tests"'
+        if: "github.event.inputs.deployment_target == 'not_smoke_tests'"
         run: pytest -m 'not smoke'
 
