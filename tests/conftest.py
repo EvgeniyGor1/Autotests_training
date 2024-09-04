@@ -4,7 +4,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pytest
 
-DEBUG_MODE = 1
+DEBUG_MODE = 0
 
 
 @pytest.fixture(scope="module")
