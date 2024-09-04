@@ -1,7 +1,6 @@
 import pytest
 import selenium.common.exceptions
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
 
 
 SUBMIT = (By.ID, 'submit-id-submit')
