@@ -1,10 +1,6 @@
-import pytest
 import selenium.common.exceptions
+from conftest import *
 from selenium.webdriver.common.by import By
-
-
-SUBMIT = (By.ID, 'submit-id-submit')
-RESULT = (By.ID, 'result-text')
 
 
 @pytest.mark.checkbox

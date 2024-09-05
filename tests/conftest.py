@@ -1,7 +1,11 @@
-from selenium import webdriver
 import pytest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 DEBUG_MODE = 0
+
+SUBMIT = (By.ID, 'submit-id-submit')
+RESULT = (By.ID, 'result-text')
 
 
 @pytest.fixture(scope='module')
